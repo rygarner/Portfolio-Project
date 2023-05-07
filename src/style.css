@@ -5,7 +5,7 @@
   }
   
   body {
-    margin: 100px;
+    margin: 100px 0;
   }
   
   h1,
@@ -86,9 +86,7 @@
   .email-link:hover {
     text-decoration: underline;
   }
-  img {
-    width: 300px;
-  }
+  
   .main-links {
     border-radius: 4px;
     padding: 20px 15px;
@@ -98,4 +96,22 @@
     box-shadow: var(--box-shadow);
     color: white;
   }
-  
+  @media(max-width: 576px) {
+    h1 {
+        font-size: 48px;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .main-links {
+        display: block;
+        text-align: center;
+        margin: 0 20px;
+    }
+  }
+
